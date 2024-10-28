@@ -1,0 +1,48 @@
+@import url(animacoes.css);
+
+.menu {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    width: 100%;
+    padding: 1rem 0;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    background: rgba(31, 31, 31, 0.5);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border-radius: 0rem 0rem 1rem 0rem;
+    z-index: 99;
+
+}
+
+
+.menu__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style-type: none;
+    column-gap: 1rem;
+}
+
+.menu__item {
+    font-size: 12px;
+    text-decoration: none;
+}
+
+ .menu__link{
+    color: #80b918;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.menu__link.ativo::before {
+    content: "\003E";
+    color: white;
+    display: inline;
+    margin-right: .75rem;
+    animation: console .75s infinite alternate;
+}
